@@ -39,6 +39,22 @@ let currentZone: string;
 let currentPopup: any;
 
 const config = [
+ {
+        zone: 'exitMeta',
+        message: 'Discover our new project Metadventure & our Gen1 NFT Collection!',
+        cta: [
+            {
+                label: 'Website',
+                className: 'primary',
+                callback: () => WA.nav.openTab('https://metadventu.re/'),
+            },
+            {
+                label: 'Metaverse',
+                className: 'primary',
+                callback: () => WA.nav.goToPage('https://play.staging.workadventu.re/@/metaventure/land/portal'),
+            }
+        ]
+    },
     {
         zone: 'needHelp',
         message: 'Do you need some guidance? Meet us by going at the top left of the map!',
@@ -183,6 +199,9 @@ WA.room.onLeaveZone('webinar',() => {
     WA.nav.closeCoWebSite()
 });
 */
+
+WA.room.onEnterZone('exitMeta', () => openPopup('exitMeta'));
+WA.room.onLeaveZone('exitMeta', closePopup);
 
 // Need Help / Follow Us
 WA.room.onEnterZone('needHelp', () => openPopup('needHelp'));
