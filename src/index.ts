@@ -41,7 +41,7 @@ let currentPopup: any;
 const config = [
  {
         zone: 'exitMeta',
-        message: 'Discover our new project Metadventure & our Gen1 NFT Collection!',
+        message: 'Get to know our new Metadventure project and our Gen1 NFT collection!',
         cta: [
             {
                 label: 'Website',
@@ -190,15 +190,6 @@ const config = [
         ]
     }
 ]
-
-// Webinar
-/* Uncomment this if you want to display the webinar popup
-WA.room.onEnterZone('webinar', () => openPopup('webinar'));
-WA.room.onLeaveZone('webinar',() => {
-    closePopup()
-    WA.nav.closeCoWebSite()
-});
-*/
 
 WA.room.onEnterZone('exitMeta', () => openPopup('exitMeta'));
 WA.room.onLeaveZone('exitMeta', closePopup);
