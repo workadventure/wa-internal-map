@@ -51,7 +51,7 @@ const config = [
             {
                 label: 'Metaverse',
                 className: 'primary',
-                callback: () => WA.nav.goToPage('https://play.staging.workadventu.re/@/metaventure/land/portal'),
+                callback: () => WA.nav.goToPage('https://play.staging.workadventu.re/@/metaventure/land/portal#from-wa'),
             }
         ]
     },
