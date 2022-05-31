@@ -9583,7 +9583,7 @@
                         {
                          "name":"zone_margin",
                          "type":"string",
-                         "value":"0.5"
+                         "value":"0.25"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -9605,7 +9605,7 @@
                         {
                          "name":"zone_margin",
                          "type":"string",
-                         "value":"0.5"
+                         "value":"0.25"
                         }],
                  "rotation":0,
                  "type":"area",
