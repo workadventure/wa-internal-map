@@ -5931,7 +5931,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
+                         "value":"{ \"DEFAULT_BACKGROUND\": \"#14304c\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -6052,7 +6052,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
+                         "value":"{ \"DEFAULT_BACKGROUND\": \"#14304c\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -6173,7 +6173,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
+                         "value":"{ \"DEFAULT_BACKGROUND\": \"#14304c\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -6294,7 +6294,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
+                         "value":"{ \"DEFAULT_BACKGROUND\": \"#14304c\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -6420,7 +6420,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{\"DEFAULT_BACKGROUND\": \"#70cc6d\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\",  \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
+                         "value":"{\"DEFAULT_BACKGROUND\": \"#14304c\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\",  \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -6536,7 +6536,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
+                         "value":"{ \"DEFAULT_BACKGROUND\": \"#14304c\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -6647,7 +6647,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{ \"MAXIMUM_ZOOMING_COEFFICIENT\": 1, \"NATIVE_APP_NAME\": \"WorkAdventure Meet\", \"PROVIDER_NAME\": \"WorkAdventure\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
+                         "value":"{ \"DEFAULT_BACKGROUND\": \"#14304c\", \"MAXIMUM_ZOOMING_COEFFICIENT\": 1, \"NATIVE_APP_NAME\": \"WorkAdventure Meet\", \"PROVIDER_NAME\": \"WorkAdventure\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\", \"DEFAULT_REMOTE_DISPLAY_NAME\": \"WorkAdventurer\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
