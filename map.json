@@ -5929,6 +5929,11 @@
                  "opacity":1,
                  "properties":[
                         {
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\" }"
+                        }, 
+                        {
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"Latte"
@@ -6044,6 +6049,11 @@
                  "name":"Paradise",
                  "opacity":1,
                  "properties":[
+                        {
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\" }"
+                        }, 
                         {
                          "name":"jitsiRoom",
                          "type":"string",
@@ -6161,6 +6171,11 @@
                  "opacity":1,
                  "properties":[
                         {
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\" }"
+                        }, 
+                        {
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"Cheese"
@@ -6276,6 +6291,11 @@
                  "name":"Woodstock",
                  "opacity":1,
                  "properties":[
+                        {
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\" }"
+                        }, 
                         {
                          "name":"jitsiRoom",
                          "type":"string",
@@ -6400,7 +6420,7 @@
                         {
                          "name":"jitsiInterfaceConfig",
                          "type":"string",
-                         "value":"{\"DEFAULT_BACKGROUND\": \"#70cc6d\"}"
+                         "value":"{\"DEFAULT_BACKGROUND\": \"#70cc6d\", \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\" }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -6514,6 +6534,11 @@
                  "opacity":1,
                  "properties":[
                         {
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\" }"
+                        }, 
+                        {
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"AlbertEinstein"
@@ -6619,6 +6644,11 @@
                  "name":"Westeros",
                  "opacity":1,
                  "properties":[
+                        {
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{ \"DEFAULT_LOGO_URL\": \"https:\/\/backup-workadventure-db-prod.s3-eu-west-1.amazonaws.com\/mini_logo\/MJSglQn3n9s0hQQIu9O1uIWGTvYnnr1PpLdIWCzZ.png\" }"
+                        }, 
                         {
                          "name":"jitsiRoom",
                          "type":"string",
@@ -10027,7 +10057,7 @@
          "value":true
         }],
  "renderorder":"right-down",
- "tiledversion":"1.8.4",
+ "tiledversion":"1.8.6",
  "tileheight":32,
  "tilesets":[
         {
