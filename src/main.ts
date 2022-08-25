@@ -1,5 +1,6 @@
-/// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-import {bootstrapExtra} from '@workadventure/scripting-api-extra'
+/// <reference types="@workadventure/iframe-api-typings/iframe_api" />
+
+import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
@@ -35,7 +36,6 @@ WA.room.onEnterZone('doorCode', () => WA.room.hideLayer('ctaDigitCodeSwitch'));
 WA.room.onLeaveZone('doorCode', () => WA.room.showLayer('ctaDigitCodeSwitch'));
 
 // Manage popups
-let currentZone: string;
 let currentPopup: any;
 
 const config = [
@@ -273,7 +273,6 @@ WA.room.onLeaveZone('toRoom3', closePopup);
 
 // Popup management functions
 function openPopup(zoneName: string) {
-    currentZone = zoneName
     const popupName = zoneName + 'Popup'
     const zone = config.find((item) => {
         return item.zone == zoneName
