@@ -9648,7 +9648,7 @@
                  "class":"area",
                  "height":252.971137521222,
                  "id":75,
-                 "name":"ChatWesteros",
+                 "name":"ChatAlbertEinstein",
                  "properties":[
                         {
                          "name":"chatDescription",
@@ -9658,7 +9658,7 @@
                         {
                          "name":"chatName",
                          "type":"string",
-                         "value":"ChatAlbertEinstein"
+                         "value":"Public Chat Albert Einstein"
                         }],
                  "rotation":0,
                  "visible":true,
@@ -9680,7 +9680,7 @@
                         {
                          "name":"chatName",
                          "type":"string",
-                         "value":"ChatWesteros"
+                         "value":"Public Chat Westeros"
                         }],
                  "rotation":0,
                  "visible":true,
