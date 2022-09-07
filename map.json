@@ -9648,7 +9648,7 @@
                  "class":"area",
                  "height":252.971137521222,
                  "id":75,
-                 "name":"ChatAlbertEinstein",
+                 "name":"chatalberteinstein",
                  "properties":[
                         {
                          "name":"chatDescription",
@@ -9658,7 +9658,7 @@
                         {
                          "name":"chatName",
                          "type":"string",
-                         "value":"Public Chat Albert Einstein"
+                         "value":"publicchatalberteinstein"
                         }],
                  "rotation":0,
                  "visible":true,
@@ -9670,7 +9670,7 @@
                  "class":"area",
                  "height":236.842,
                  "id":76,
-                 "name":"ChatWesteros",
+                 "name":"chatwesteros",
                  "properties":[
                         {
                          "name":"chatDescription",
@@ -9680,7 +9680,7 @@
                         {
                          "name":"chatName",
                          "type":"string",
-                         "value":"Public Chat Westeros"
+                         "value":"publicchatwesteros"
                         }],
                  "rotation":0,
                  "visible":true,
