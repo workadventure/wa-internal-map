@@ -174,7 +174,23 @@ const config = [
         ]
     },
     {
-        zone: 'signup',
+        zone: 'signup1',
+        message: 'Sign up for free and create your own map!',
+        cta: [
+            {
+                label: 'Close',
+                className: 'normal',
+                callback: () => closePopup(),
+            },
+            {
+                label: 'Sign up for free',
+                className: 'primary',
+                callback: () => WA.nav.openTab('https://workadventu.re/getting-started'),
+            }
+        ]
+    },
+    {
+        zone: 'signup2',
         message: 'Sign up for free and create your own map!',
         cta: [
             {
@@ -207,8 +223,11 @@ WA.room.onLeaveZone('followUs2', closePopup);
 WA.room.onEnterZone('followUs3', () => openPopup('followUs3'));
 WA.room.onLeaveZone('followUs3', closePopup);
 
-WA.room.onEnterZone('signupZone', () => openPopup('signup'));
-WA.room.onLeaveZone('signupZone', closePopup);
+WA.room.onEnterZone('signupZone1', () => openPopup('signup1'));
+WA.room.onLeaveZone('signupZone1', closePopup);
+
+WA.room.onEnterZone('signupZone2', () => openPopup('signup2'));
+WA.room.onLeaveZone('signupZone2', closePopup);
 
 WA.state.onVariableChange('gardenDoor').subscribe((data: unknown) => {
     if(data === true){
