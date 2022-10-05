@@ -22,6 +22,20 @@ async function extendedFeatures() {
         githubRepository.y = 1088;
         githubRepository.width = 400;
         githubRepository.height = 300;
+
+        // Open funnel to connect user
+        try{
+            if(WA.player.state.tutorialDone && !WA.player.isLogged){
+                openFunnel();
+                return;
+            }
+            WA.player.state.onVariableChange('tutorialDone').subscribe((tutorialDone) => {
+                if(!tutorialDone && !WA.player.isLogged) return;
+                openFunnel();
+            });
+        }catch (err) {
+            console.error('Funnel scripting API Extra ERROR',err);
+        }
     } catch (error) {
         console.error('Scripting API Extra ERROR',error);
     }
@@ -307,4 +321,18 @@ function closePopup(){
         currentPopup.close();
         currentPopup = undefined;
     }
+}
+
+const openFunnel = () => {
+    console.info("Funnel script initialized!");
+    setTimeout(() => {
+        WA.ui.modal.closeModal();
+        WA.ui.modal.openModal({
+            src: `https://workadventu.re/funnel/connection?mapUrl=${encodeURI(WA.room.id)}`,
+            allow: "fullscreen",
+            tiltle: "Subscription",
+            allowApi: true,
+            position: "center"
+        });
+    });
 }
