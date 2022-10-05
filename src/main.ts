@@ -25,11 +25,13 @@ async function extendedFeatures() {
 
         // Open funnel to connect user
         try{
+            // @ts-ignore
             if(WA.player.state.tutorialDone && !WA.player.isLogged){
                 openFunnel();
                 return;
             }
             WA.player.state.onVariableChange('tutorialDone').subscribe((tutorialDone) => {
+                // @ts-ignore
                 if(!tutorialDone && !WA.player.isLogged) return;
                 openFunnel();
             });
@@ -326,7 +328,9 @@ function closePopup(){
 const openFunnel = () => {
     console.info("Funnel script initialized!");
     setTimeout(() => {
+        // @ts-ignore
         WA.ui.modal.closeModal();
+        // @ts-ignore
         WA.ui.modal.openModal({
             src: `https://workadventu.re/funnel/connection?mapUrl=${encodeURI(WA.room.id)}`,
             allow: "fullscreen",
