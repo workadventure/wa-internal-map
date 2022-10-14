@@ -306,6 +306,22 @@ WA.room.onEnterZone('toRoom3', () => {
 });
 WA.room.onLeaveZone('toRoom3', closePopup);
 
+// Exit to Metadventure
+WA.room.area.onEnter("exitToMetadventure").subscribe(() => {
+    WA.room.showLayer("haloExitMetadventure")
+    currentPopup = WA.ui.openPopup("exitToMetadventurePopup", "Teleport to Metadventure", [
+        {
+            label: 'Whoosh!',
+            className: 'primary',
+            callback: () => WA.nav.goToPage("https://play.metadventu.re/@/village#from-workadventure"),
+        }
+    ])
+})
+WA.room.area.onLeave("exitToMetadventure").subscribe(() => {
+    closePopup()
+    WA.room.hideLayer("haloExitMetadventure")
+})
+
 // Popup management functions
 function openPopup(zoneName: string) {
     const popupName = zoneName + 'Popup'
