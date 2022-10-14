@@ -2400,7 +2400,7 @@
                  "id":81,
                  "name":"exitToMetadventure",
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":75.0340000000001,
                  "x":1248,
