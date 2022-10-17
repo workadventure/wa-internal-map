@@ -1910,7 +1910,7 @@
                          "value":"https:\/\/i.ibb.co\/xGCqXLm\/countdown-wa-cinema.gif"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":216.400453564505,
                  "x":1670.00413958544,
@@ -2005,7 +2005,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":1888,
@@ -2023,7 +2023,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":1696,
@@ -2041,7 +2041,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2496,
@@ -2059,7 +2059,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2464,
@@ -2077,7 +2077,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":3296,
@@ -2099,7 +2099,7 @@
                          "value":"https:\/\/valdotr.github.io\/wa-internal-map\/repository.html"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":405,
                  "x":3275,
@@ -2137,7 +2137,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":3424,
@@ -2197,7 +2197,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":3499.2555784561,
@@ -2235,7 +2235,7 @@
                          "value":false
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":943,
@@ -2279,7 +2279,7 @@
                          "value":"openGardenDoor"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":196,
@@ -2301,7 +2301,7 @@
                          "value":"0.25"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":194,
                  "x":672,
@@ -2323,7 +2323,7 @@
                          "value":"0.25"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":320,
                  "x":896,
@@ -2345,7 +2345,7 @@
                          "value":"publicchatalberteinstein"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":320.033955857385,
                  "x":896.434634974533,
@@ -2367,7 +2367,7 @@
                          "value":"publicchatwesteros"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":193.548,
                  "x":671.477273344652,
@@ -2411,7 +2411,7 @@
                  "id":82,
                  "name":"exitToMetadventurePopup",
                  "rotation":0,
-                 "type":"area",
+                 "type":"",
                  "visible":true,
                  "width":192,
                  "x":1248,
@@ -2465,7 +2465,7 @@
                          "value":true
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2338.37387683542,
@@ -2493,7 +2493,7 @@
                          "value":true
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":1090.66666666667,
