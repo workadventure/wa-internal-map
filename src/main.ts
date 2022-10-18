@@ -208,7 +208,7 @@ const config = [
             {
                 label: 'Sign up for free',
                 className: 'primary',
-                callback: () => WA.nav.openTab('https://workadventu.re/getting-started'),
+                callback: () => openFunnel()
             }
         ]
     },
@@ -224,7 +224,7 @@ const config = [
             {
                 label: 'Sign up for free',
                 className: 'primary',
-                callback: () => WA.nav.openTab('https://workadventu.re/getting-started'),
+                callback: () => openFunnel(),
             }
         ]
     }
