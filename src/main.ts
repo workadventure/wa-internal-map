@@ -10,20 +10,27 @@ async function extendedFeatures() {
         console.log('Scripting API Extra loaded successfully');
 
         // Place the countdown GIF inside of the cinema screen
-        const countdown = await WA.room.website.get('cinemaScreen');
-        countdown.x = 1670;
-        countdown.y = 802;
-        countdown.width = 320;
-        countdown.height = 240;
+        try{
+            const countdown = await WA.room.website.get('cinemaScreen');
+            countdown.x = 1670;
+            countdown.y = 802;
+            countdown.width = 320;
+            countdown.height = 240;
+        }catch(err){
+            console.error(err);
+        }
 
-        // Place the github repository card
-        const githubRepository = await WA.room.website.get('githubRepository');
-        githubRepository.x = 3272;
-        githubRepository.y = 1088;
-        githubRepository.width = 400;
-        githubRepository.height = 300;
+        try{
+            // Place the github repository card
+            const githubRepository = await WA.room.website.get('githubRepository');
+            githubRepository.x = 3272;
+            githubRepository.y = 1088;
+            githubRepository.width = 400;
+            githubRepository.height = 300;
+        }catch(err){
+            console.error(err);
+        }
 
-        // Open funnel to connect user
         try{
             // @ts-ignore
             if(WA.player.state.tutorialDone && !WA.player.isLogged){
@@ -342,17 +349,25 @@ function closePopup(){
 }
 
 const openFunnel = () => {
-    console.info("Funnel script initialized!");
+    // CHANGE ME FOR PROD
+    const TIME_TO_OPEN_FUNNEL = 0;
+    //const TIME_TO_OPEN_FUNNEL = 20000;
+
     setTimeout(() => {
-        // @ts-ignore
-        WA.ui.modal.closeModal();
-        // @ts-ignore
-        WA.ui.modal.openModal({
-            src: `https://workadventu.re/funnel/connection?mapUrl=${encodeURI(WA.room.id)}`,
-            allow: "fullscreen",
-            tiltle: "Subscription",
-            allowApi: true,
-            position: "center"
-        });
-    });
+        console.info("Funnel script initialized!");
+        try{
+            // @ts-ignore
+            WA.ui.modal.closeModal();
+            // @ts-ignore
+            WA.ui.modal.openModal({
+                src: `https://develop.test.workadventu.re/funnel/connection?mapUrl=${encodeURI(WA.room.id)}`,
+                allow: "fullscreen",
+                tiltle: "Subscription",
+                allowApi: true,
+                position: "center"
+            });
+        }catch(err){
+            console.error(err);
+        }
+    }, TIME_TO_OPEN_FUNNEL);
 }
