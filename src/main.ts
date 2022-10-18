@@ -349,6 +349,10 @@ function closePopup(){
 }
 
 const openFunnel = () => {
+    // CHANGE ME FOR PROD
+    const TIME_TO_OPEN_FUNNEL = 0;
+    //const TIME_TO_OPEN_FUNNEL = 20000;
+
     setTimeout(() => {
         console.info("Funnel script initialized!");
         try{
@@ -365,5 +369,5 @@ const openFunnel = () => {
         }catch(err){
             console.error(err);
         }
-    }, 20000);
+    }, TIME_TO_OPEN_FUNNEL);
 }
