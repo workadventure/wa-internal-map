@@ -349,10 +349,15 @@ function closePopup(){
 }
 
 const openFunnel = () => {
+
+    if(WA.room.id.indexOf('https://play.workadventu.re') !== -1 || WA.room.id.indexOf('https://play.staging.workadventu.re') !== -1){
+        WA.nav.openTab('https://workadventu.re/getting-started');
+        return;
+    }
+
     // CHANGE ME FOR PROD
     const TIME_TO_OPEN_FUNNEL = 0;
     //const TIME_TO_OPEN_FUNNEL = 20000;
-
     setTimeout(() => {
         console.info("Funnel script initialized!");
         try{
