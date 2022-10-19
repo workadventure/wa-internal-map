@@ -365,7 +365,7 @@ const openFunnel = () => {
             WA.ui.modal.closeModal();
             // @ts-ignore
             WA.ui.modal.openModal({
-                src: `https://develop.test.workadventu.re/funnel/connection?mapUrl=${encodeURI(WA.room.id)}`,
+                src: `https://develop.test.workadventu.re/funnel/connection?roomUrl=${encodeURI(WA.room.id)}`,
                 allow: "fullscreen",
                 tiltle: "Subscription",
                 allowApi: true,
