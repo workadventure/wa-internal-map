@@ -351,6 +351,7 @@ function closePopup(){
 }
 
 const canRegister = (tutorialDone = false) => {
+    // @ts-ignore
     return (!WA.player.state.tutorialDone || tutorialDone) && !WA.player.isLogged && !WA.player.state.isRegistered;
 }
 
