@@ -1,6 +1,6 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
-import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import { bootstrapExtra, initTutorial } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
@@ -34,11 +34,6 @@ async function extendedFeatures() {
         try{
             // @ts-ignore
             if(!WA.player.state.tutorialDone){
-                console.info('Open the tutorial');
-                // CHANGE PROD
-                //launchTutorialv1();
-                //initTutorial();
-                //open modal and show onboarding tuto
                 openTutorial();
             }
             else if(canRegister()){
@@ -388,11 +383,16 @@ const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
 }
 
 const openTutorial = () => {
+    console.info('Open the tutorial');
+    // CHANGE PROD
+    //launchTutorialv1();
+    initTutorial();
+    //open modal and show onboarding tuto
     // @ts-ignore
-    WA.ui.modal.openModal({
+    /*WA.ui.modal.openModal({
         src: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/upload/scripting/dist/tutorialv1.html',
         allow: "fullscreen; clipboard-read; clipboard-write",
         allowApi: true,
         position: "right",
-    });
+    });*/
 }
