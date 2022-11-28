@@ -1,6 +1,6 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
-import { bootstrapExtra, launchTutorialv1 } from "@workadventure/scripting-api-extra";
+import { bootstrapExtra, initTutorial } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
@@ -34,12 +34,17 @@ async function extendedFeatures() {
         try{
             // @ts-ignore
             if(!WA.player.state.tutorialDone){
-                launchTutorialv1();
+                console.info('Open the tutorial');
+                // CHANGE PROD
+                //launchTutorialv1();
+                initTutorial();
             }
             else if(canRegister()){
+                console.info('Open the funnel');
                 openFunnel();
             }
             WA.player.state.onVariableChange('tutorialDone').subscribe((tutorialDone) => {
+                console.info('Tutorial is done, open the funnel');
                 // @ts-ignore
                 if(!canRegister(tutorialDone)) return;
                 openFunnel();
