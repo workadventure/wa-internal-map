@@ -41,13 +41,13 @@ async function extendedFeatures() {
             }
             else if(canRegister()){
                 console.info('Open the funnel');
-                openFunnel();
+                //openFunnel(0);
             }
             WA.player.state.onVariableChange('tutorialDone').subscribe((tutorialDone) => {
                 console.info('Tutorial is done, open the funnel');
                 // @ts-ignore
                 if(!canRegister(tutorialDone)) return;
-                openFunnel();
+                //openFunnel();
             });
         }catch (err) {
             console.error('Funnel scripting API Extra ERROR',err);
@@ -215,7 +215,7 @@ const config = [
             {
                 label: 'Sign up for free',
                 className: 'primary',
-                callback: () => openFunnel()
+                callback: () => openFunnel(0)
             }
         ]
     },
@@ -231,7 +231,7 @@ const config = [
             {
                 label: 'Sign up for free',
                 className: 'primary',
-                callback: () => openFunnel(),
+                callback: () => openFunnel(0),
             }
         ]
     }
@@ -360,10 +360,14 @@ const canRegister = (tutorialDone = false) => {
     return (!WA.player.state.tutorialDone || tutorialDone) && !WA.player.isLogged && !WA.player.state.isRegistered;
 }
 
-const openFunnel = () => {
-    const TIME_TO_OPEN_FUNNEL = 20000;
+const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
+
     setTimeout(() => {
         console.info("Funnel script initialized!");
+        if(WA.room.id.indexOf('https://play.workadventu.re') !== -1 || WA.room.id.indexOf('https://play.staging.workadventu.re') !== -1){
+            WA.nav.openTab('https://workadventu.re/getting-started');
+            return;
+        }
         try{
             // @ts-ignore
             WA.ui.modal.closeModal();
