@@ -1,6 +1,6 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
-import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import { bootstrapExtra, launchTutorialv1 } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
@@ -33,13 +33,15 @@ async function extendedFeatures() {
 
         try{
             // @ts-ignore
-            if(WA.player.state.tutorialDone && !WA.player.isLogged){
+            if(!WA.player.state.tutorialDone){
+                launchTutorialv1();
+            }
+            else if(canRegister()){
                 openFunnel();
-                return;
             }
             WA.player.state.onVariableChange('tutorialDone').subscribe((tutorialDone) => {
                 // @ts-ignore
-                if(!tutorialDone && !WA.player.isLogged) return;
+                if(!canRegister(tutorialDone)) return;
                 openFunnel();
             });
         }catch (err) {
@@ -337,7 +339,7 @@ function openPopup(zoneName: string) {
     });
 
     if (typeof zone !== 'undefined') {
-        // @ts-ignore otherwise we can't use zone.cta object
+        // @ts-ignore
         currentPopup = WA.ui.openPopup(popupName, zone.message, zone.cta)
     }
 }
@@ -348,16 +350,12 @@ function closePopup(){
     }
 }
 
+const canRegister = (tutorialDone = false) => {
+    return (!WA.player.state.tutorialDone || tutorialDone) && !WA.player.isLogged && !WA.player.state.isRegistered;
+}
+
 const openFunnel = () => {
-
-    if(WA.room.id.indexOf('https://play.workadventu.re') !== -1 || WA.room.id.indexOf('https://play.staging.workadventu.re') !== -1){
-        WA.nav.openTab('https://workadventu.re/getting-started');
-        return;
-    }
-
-    // CHANGE ME FOR PROD
-    const TIME_TO_OPEN_FUNNEL = 0;
-    //const TIME_TO_OPEN_FUNNEL = 20000;
+    const TIME_TO_OPEN_FUNNEL = 20000;
     setTimeout(() => {
         console.info("Funnel script initialized!");
         try{
@@ -365,7 +363,7 @@ const openFunnel = () => {
             WA.ui.modal.closeModal();
             // @ts-ignore
             WA.ui.modal.openModal({
-                src: `https://develop.test.workadventu.re/funnel/connection?roomUrl=${encodeURI(WA.room.id)}`,
+                src: `https://workadventu.re/funnel/connection?roomUrl=${encodeURI(WA.room.id)}`,
                 allow: "fullscreen",
                 tiltle: "Subscription",
                 allowApi: true,
