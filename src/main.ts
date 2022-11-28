@@ -1,6 +1,6 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
-import { bootstrapExtra, initTutorial } from "@workadventure/scripting-api-extra";
+import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
@@ -388,8 +388,8 @@ const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
 }
 
 const openTutorial = () => {
+    // @ts-ignore
     WA.ui.modal.openModal({
-        tiltle: 'Tutorial',
         src: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/upload/scripting/dist/tutorialv1.html',
         allow: "fullscreen; clipboard-read; clipboard-write",
         allowApi: true,
