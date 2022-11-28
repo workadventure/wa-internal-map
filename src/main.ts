@@ -37,7 +37,9 @@ async function extendedFeatures() {
                 console.info('Open the tutorial');
                 // CHANGE PROD
                 //launchTutorialv1();
-                initTutorial();
+                //initTutorial();
+                //open modal and show onboarding tuto
+                openTutorial();
             }
             else if(canRegister()){
                 console.info('Open the funnel');
@@ -383,4 +385,14 @@ const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
             console.error(err);
         }
     }, TIME_TO_OPEN_FUNNEL);
+}
+
+const openTutorial = () => {
+    WA.ui.modal.openModal({
+        tiltle: 'Tutorial',
+        src: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/upload/scripting/dist/tutorialv1.html',
+        allow: "fullscreen; clipboard-read; clipboard-write",
+        allowApi: true,
+        position: "right",
+    });
 }
