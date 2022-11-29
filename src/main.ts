@@ -1,6 +1,9 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
-import { bootstrapExtra, initTutorial } from "@workadventure/scripting-api-extra";
+import "./onboarding";
+
+import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import { openFunnel } from "./onboarding";
 
 console.log('Script started successfully');
 
@@ -28,26 +31,7 @@ async function extendedFeatures() {
             githubRepository.width = 400;
             githubRepository.height = 300;
         }catch(err){
-            console.error(err);
-        }
-
-        try{
-            // @ts-ignore
-            if(!WA.player.state.tutorialDone){
-                openTutorial();
-            }
-            else if(canRegister()){
-                console.info('Open the funnel');
-                //openFunnel(0);
-            }
-            WA.player.state.onVariableChange('tutorialDone').subscribe((tutorialDone) => {
-                console.info('Tutorial is done, open the funnel');
-                // @ts-ignore
-                if(!canRegister(tutorialDone)) return;
-                //openFunnel();
-            });
-        }catch (err) {
-            console.error('Funnel scripting API Extra ERROR',err);
+            console.error('githubRepository => ', err);
         }
     } catch (error) {
         console.error('Scripting API Extra ERROR',error);
@@ -350,49 +334,4 @@ function closePopup(){
         currentPopup.close();
         currentPopup = undefined;
     }
-}
-
-const canRegister = (tutorialDone = false) => {
-    // @ts-ignore
-    return (!WA.player.state.tutorialDone || tutorialDone) && !WA.player.isLogged && !WA.player.state.isRegistered;
-}
-
-const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
-
-    setTimeout(() => {
-        console.info("Funnel script initialized!");
-        if(WA.room.id.indexOf('https://play.workadventu.re') !== -1 || WA.room.id.indexOf('https://play.staging.workadventu.re') !== -1){
-            WA.nav.openTab('https://workadventu.re/getting-started');
-            return;
-        }
-        try{
-            // @ts-ignore
-            WA.ui.modal.closeModal();
-            // @ts-ignore
-            WA.ui.modal.openModal({
-                src: `https://workadventu.re/funnel/connection?roomUrl=${encodeURI(WA.room.id)}`,
-                allow: "fullscreen",
-                tiltle: "Subscription",
-                allowApi: true,
-                position: "center"
-            });
-        }catch(err){
-            console.error(err);
-        }
-    }, TIME_TO_OPEN_FUNNEL);
-}
-
-const openTutorial = () => {
-    console.info('Open the tutorial');
-    // CHANGE PROD
-    //launchTutorialv1();
-    initTutorial();
-    //open modal and show onboarding tuto
-    // @ts-ignore
-    /*WA.ui.modal.openModal({
-        src: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/upload/scripting/dist/tutorialv1.html',
-        allow: "fullscreen; clipboard-read; clipboard-write",
-        allowApi: true,
-        position: "right",
-    });*/
 }
