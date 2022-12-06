@@ -269,9 +269,9 @@
     "tailwindcss" "^3.1.8"
 
 "@workadventure/iframe-api-typings@^1.11.2":
-  "integrity" "sha512-j911YkR4qfIV+5xug1j6Xxfw2KSiR4MtubS4r0fYVbfPmr0xQeLw9xtmSJXfDldLpO19g2DLRvK5mbVHXIH57g=="
-  "resolved" "https://registry.npmjs.org/@workadventure/iframe-api-typings/-/iframe-api-typings-1.14.3.tgz"
-  "version" "1.14.3"
+  "integrity" "sha512-pWLgLViLMsf3YJoBOB17To/YLPSI/rlrB2pfInaWP7tdNniutxBePJURRVvgLNHFuEBHcjbGyxmiwwPT62XzJg=="
+  "resolved" "https://registry.npmjs.org/@workadventure/iframe-api-typings/-/iframe-api-typings-1.14.7.tgz"
+  "version" "1.14.7"
   dependencies:
     "rxjs" "^6.6.3"
     "zod" "^3.14.3"
