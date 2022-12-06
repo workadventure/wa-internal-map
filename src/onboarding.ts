@@ -21,8 +21,10 @@ WA.onInit().then(() => {
         openFunnel();
     });*/
 
-    WA.player.state.onVariableChange('isRegistered').subscribe(() => {
-        WA.ui.actionBar.removeButton('register-btn');
+    WA.player.state.onVariableChange('isRegistered').subscribe((isRegistered) => {
+        if(isRegistered === true){
+            WA.ui.actionBar.removeButton('register-btn');
+        }
     });
 }).catch((err) => {
     console.error('Onboarding Script initialisation error => ', err);
@@ -63,7 +65,7 @@ const addRegisterButton = () => {
         id: 'register-btn',
         label: 'Register',
         callback: () => {
-            openFunnel();
+            openFunnel(0);
         }
     });
 }
