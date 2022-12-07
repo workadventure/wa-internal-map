@@ -312,7 +312,7 @@ WA.room.area.onEnter("exitToMetadventureGen1").subscribe(() => {
         {
             label: 'Touch the painting...',
             className: 'primary',
-            callback: () => WA.nav.goToPage("https://play.metadventu.re/@/gen-1-world#from-wa"),
+            callback: () => WA.nav.goToPage("https://play.metadventu.re/@/gen-1-world"),
         }
     ])
 })
