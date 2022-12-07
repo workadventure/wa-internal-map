@@ -22,17 +22,6 @@ async function extendedFeatures() {
         }catch(err){
             console.error(err);
         }
-
-        try{
-            // Place the github repository card
-            const githubRepository = await WA.room.website.get('githubRepository');
-            githubRepository.x = 3272;
-            githubRepository.y = 1088;
-            githubRepository.width = 400;
-            githubRepository.height = 300;
-        }catch(err){
-            console.error('githubRepository => ', err);
-        }
     } catch (error) {
         console.error('Scripting API Extra ERROR',error);
     }
@@ -313,6 +302,21 @@ WA.room.area.onEnter("exitToMetadventure").subscribe(() => {
     ])
 })
 WA.room.area.onLeave("exitToMetadventure").subscribe(() => {
+    closePopup()
+    WA.room.hideLayer("haloExitMetadventure")
+})
+
+// Exit to Metadventure Gen1
+WA.room.area.onEnter("exitToMetadventureGen1").subscribe(() => {
+    currentPopup = WA.ui.openPopup("exitToMetadventureGen1Popup", "This painting from the 1650s represents the secret world of Metadventure Gen.1", [
+        {
+            label: 'Touch the painting...',
+            className: 'primary',
+            callback: () => WA.nav.goToPage("https://play.metadventu.re/@/gen-1-world#from-wa"),
+        }
+    ])
+})
+WA.room.area.onLeave("exitToMetadventureGen1").subscribe(() => {
     closePopup()
     WA.room.hideLayer("haloExitMetadventure")
 })
