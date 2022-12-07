@@ -316,10 +316,7 @@ WA.room.area.onEnter("exitToMetadventureGen1").subscribe(() => {
         }
     ])
 })
-WA.room.area.onLeave("exitToMetadventureGen1").subscribe(() => {
-    closePopup()
-    WA.room.hideLayer("haloExitMetadventure")
-})
+WA.room.area.onLeave("exitToMetadventureGen1").subscribe(closePopup)
 
 // Popup management functions
 function openPopup(zoneName: string) {
