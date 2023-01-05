@@ -1,6 +1,7 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
 import "./onboarding";
+import "./survey";
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 import { openFunnel } from "./onboarding";
