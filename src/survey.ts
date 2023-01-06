@@ -35,7 +35,7 @@ const addFeebackButton = () => {
         // @ts-ignore
         type: 'action',
         imageSrc: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/logo/workadventure-rate-white.svg',
-        toolTip: 'Let your feedback',
+        toolTip: 'Feedback',
         callback: (event) => {
             console.log('Button feedback triggered', event);
             openSurveyFeedback(0);
