@@ -11,10 +11,10 @@ WA.onInit().then(() => {
     if(!WA.player.state.tutorialDone){
         openTutorial();
     }
-    else if(canRegister()){
+    /*else if(canRegister()){
         console.info('Open the funnel');
         openFunnel(0);
-    }
+    }*/
     /*WA.player.state.onVariableChange('tutorialDone').subscribe(() => {
         console.info('Tutorial is done, open the funnel');
         if(!canRegister()) return;
