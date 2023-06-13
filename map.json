@@ -809,7 +809,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"\/@\/tcm\/workadventure\/tcm\/rdc#from-wa"
+                 "value":"\/@\/tcm\/workadventure\/rdc#from-wa"
                 }],
          "type":"tilelayer",
          "visible":true,
