@@ -208,6 +208,21 @@ const config = [
     }
 ]
 
+// AI Robots
+WA.room.onEnterLayer("embed/e-Lon").subscribe(() => {
+    WA.room.showLayer("e-Lon-active")
+})
+WA.room.onLeaveLayer("embed/e-Lon").subscribe(() => {
+    WA.room.hideLayer("e-Lon-active")
+})
+
+WA.room.onEnterLayer("embed/Dan-e").subscribe(() => {
+    WA.room.showLayer("Dan-e-active")
+})
+WA.room.onLeaveLayer("embed/Dan-e").subscribe(() => {
+    WA.room.hideLayer("Dan-e-active")
+})
+
 WA.room.onEnterZone('exitMeta', () => openPopup('exitMeta'));
 WA.room.onLeaveZone('exitMeta', closePopup);
 
