@@ -2453,7 +2453,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"Press SPACE ou touch here to chat with Dan-e, our AI Tech assistant"
+                         "value":"Press SPACE or touch here to chat with Dan-e, our Tech AI assistant"
                         }, 
                         {
                          "name":"silent",
@@ -2569,7 +2569,7 @@
                         {
                          "name":"openWebsiteTriggerMessage",
                          "type":"string",
-                         "value":"Press SPACE ou touch here to chat with e-Lon, our AI Business assistant"
+                         "value":"Press SPACE or touch here to meet e-Lon, our Future of Work AI assistant"
                         }, 
                         {
                          "name":"silent",
